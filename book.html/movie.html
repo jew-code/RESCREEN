@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>영화</title>
+    <link rel="stylesheet" href="../css/movie.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="con">
+          <!-- 로고 -->
+          <h1>
+            <a href="/"><img src="../img/header/logo.png" alt="logo" /></a>
+          </h1>
+          <!-- GNB -->
+          <nav id="gnb">
+            <ul>
+              <li>
+                <a href="../introduce.html">회사소개</a>
+              </li>
+              <li>
+                <a href="#">예매</a>
+                <!-- 2차 메뉴 -->
+                <div class="submenu_wrap">
+                  <ul class="submenu">
+                    <li><a href="#">영화</a></li>
+                    <li><a href="#">예매하기</a></li>
+                    <li><a href="#">상영시간표</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="../funding.html">펀딩</a>
+              </li>
+              <li>
+                <a href="#">추천영화</a>
+                <!-- 2차 메뉴 -->
+                <div class="submenu_wrap">
+                  <ul class="submenu">
+                    <li><a href="#">투표하기</a></li>
+                    <li><a href="#">금주 추천 영화</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">공지사항</a>
+                <!-- 2차 메뉴 -->
+                <div class="submenu_wrap">
+                  <ul class="submenu">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">멤버쉽</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <!-- search bar -->
+          <div class="search_bar">
+            <h5>찾고 있는 영화가 있나요?</h5>
+            <div class="search_img">
+              <img
+                src="../img/header/icons/search-interface-symbol.png"
+                alt="서치바"
+              />
+            </div>
+          </div>
+          <!-- icon -->
+          <div class="icons">
+            <div class="bell-wrap">
+              <button type="button">
+                <img
+                  src="../img/header/icons/bell.png"
+                  alt="bell"
+                  class="bell"
+                />
+                <span class="notification-dot"></span>
+              </button>
+              <div class="bell-submenu">
+                <button class="close-btn">×</button>
+                <ul>
+                  <li>
+                    <a href="#">회원 전용 쿠폰이 발급됐습니다</a>
+                    <p>
+                      지금 당장 마이페이지를 방문해서<br />
+                      쿠폰을 확인해보세요!
+                    </p>
+                  </li>
+                  <li>
+                    <a href="#">회원 전용 쿠폰이 발급됐습니다</a>
+                    <p>
+                      지금 당장 마이페이지를 방문해서<br />
+                      쿠폰을 확인해보세요!
+                    </p>
+                  </li>
+                  <li>
+                    <a href="#">회원 전용 쿠폰이 발급됐습니다</a>
+                    <p>
+                      지금 당장 마이페이지를 방문해서<br />
+                      쿠폰을 확인해보세요!
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button type="button">
+              <img src="../img/header/icons/login.png" alt="login" />
+            </button>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="main-visual">
+          <div class="main-visual-video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/1Vnghdsjmd0?autoplay=1&mute=1&loop=1&playlist=1Vnghdsjmd0&controls=0&modestbranding=1&rel=0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="origainal-ticket">
+            <!-- 오리지널 티켓 모양 이미지 삽입 -->
+
+          </div>
+        </section>
+        <section class="movies">
+          <div class="con">
+          <div class="choice">
+            <div class="choice-text">
+              <h2 class="ing" onclick=""><a href="#">현재상영작</a></h2>
+              <h2 class="will" onclick=""><a href="#">상영예정작</a></h2>
+            </div>
+            <div class="bottom-line"></div>
+          </div>
+          <div class="card-wrapper">
+            <div class="card-wrap">
+              <div class="card">
+                <div class="card-img">
+                  <img src="./img/funding/image 108.png" alt="" />
+                </div>
+                <div class="heart-icon">
+                  <img src="./img/main/heart.png" alt="heart" />
+                </div>
+                <div class="card-text">
+                  <div class="card-top">
+                    <span>마감임박</span>
+                    <h3 class="d-day">D-2</h3>
+                  </div>
+                  <h2>오만과 편견</h2>
+                  <p>
+                    아름답고 매력적인 엘리자베스는 사랑하는 사람과의 결혼을 믿는
+                    자존심 강하고 영리한 소녀이다.
+                  </p>
+                  <div class="card-bottom">
+                    <h3 class="money">3,480,500원 펀딩</h3>
+                    <h3 class="percent">171%</h3>
+                  </div>
+                  <div class="color-bar"></div>
+                  <div class="percent-bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
