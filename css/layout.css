@@ -709,7 +709,7 @@ h1 img {
   position: relative;
   width: 100%;
   height: 240px;
-   overflow: hidden;
+  overflow: hidden;
 }
 .fund-img img {
   width: 100%;
@@ -719,8 +719,8 @@ h1 img {
 }
 .heart-icon {
   position: absolute;
-  top: 20px; 
-  right: 20px; 
+  top: 20px;
+  right: 20px;
   z-index: 10;
   filter: invert(70%) sepia(8%) saturate(3084%) hue-rotate(98deg)
     brightness(101%) contrast(75%);
@@ -805,6 +805,8 @@ h1 img {
   transform: scale(1.1);
   object-fit: cover;
 }
+/* 펀딩하는 카드에 호버했을 시 옆에 카드는 밀리고 해당 카드는 커짐-
+-> 스페이스 보고 참고해서 넣기 */
 /* 멤버쉽 */
 .membership {
   width: 1400px;

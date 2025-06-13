@@ -4,8 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로그인</title>
+    <link rel="stylesheet" href="./css/login.css">
 </head>
 <body>
-    
+    <div class="wrapper">
+        <header>
+        <div class="con">
+          <!-- 로고 -->
+          <h1>
+            <a href="/"><img src="./img/header/logo.png" alt="logo" /></a>
+          </h1>
+          <!-- GNB -->
+          <nav id="gnb">
+            <ul>
+              <li>
+                <a href="./introduce.html">회사소개</a>
+              </li>
+              <li>
+                <a href="#">예매</a>
+                <!-- 2차 메뉴 -->
+                <div class="submenu_wrap">
+                  <ul class="submenu">
+                    <li><a href="./book.html/movie.html">영화</a></li>
+                    <li><a href="#">예매하기</a></li>
+                    <li><a href="#">상영시간표</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="./funding.html">펀딩</a>
+              </li>
+              <li>
+                <a href="#">추천영화</a>
+                <!-- 2차 메뉴 -->
+                <div class="submenu_wrap">
+                  <ul class="submenu">
+                    <li><a href="#">투표하기</a></li>
+                    <li><a href="#">금주 추천 영화</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">공지사항</a>
+                <!-- 2차 메뉴 -->
+                <div class="submenu_wrap">
+                  <ul class="submenu">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">멤버쉽</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <!-- search bar -->
+          <div class="search_bar">
+            <h5>찾고 있는 영화가 있나요?</h5>
+            <div class="search_img">
+              <img
+                src="./img/header/icons/search-interface-symbol.png"
+                alt="서치바"
+              />
+            </div>
+          </div>
+          <!-- icon -->
+          <div class="icons">
+            <div class="bell-wrap">
+              <button type="button">
+                <img
+                  src="./img/header/icons/bell.png"
+                  alt="bell"
+                  class="bell"
+                />
+                <span class="notification-dot"></span>
+              </button>
+              <div class="bell-submenu">
+                <button class="close-btn">×</button>
+                <ul>
+                  <li>
+                    <a href="#">회원 전용 쿠폰이 발급됐습니다</a>
+                    <p>
+                      지금 당장 마이페이지를 방문해서<br />
+                      쿠폰을 확인해보세요!
+                    </p>
+                  </li>
+                  <li>
+                    <a href="#">회원 전용 쿠폰이 발급됐습니다</a>
+                    <p>
+                      지금 당장 마이페이지를 방문해서<br />
+                      쿠폰을 확인해보세요!
+                    </p>
+                  </li>
+                  <li>
+                    <a href="#">회원 전용 쿠폰이 발급됐습니다</a>
+                    <p>
+                      지금 당장 마이페이지를 방문해서<br />
+                      쿠폰을 확인해보세요!
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button type="button">
+              <a href="./login.html">
+              <img src="./img/header/icons/login.png" alt="login" />
+            </a>
+            </button>
+          </div>
+        </div>
+      </header>
+        <main>
+            <div class="con">
+            <section class="login">
+            <div class="login-wrapper">
+                <div class="left">
+                    <div class="left-img">
+                    <img src="./img/login/login-left.png" alt="">
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="./index.html">
+                    <div class="login-logo">
+                        <img src="./img/header/logo.png" alt="로고">
+                    </div>
+                    </a>
+                <form method="post" id="login-form">
+                <input type="text" name="userName" placeholder="이메일 입력">
+                <input type="password" name="userPassword" placeholder="비밀번호 입력">
+                <label for="remember-check">
+                    <input type="checkbox" id="remember-check">아이디 저장하기
+                </label>
+                <input type="submit" value="로그인">
+                <input type="submit" value="이메일로 로그인" class="email-login">
+                <input type="submit" value="네이버로 로그인" class="naver-login">
+                <input type="submit" value="카카오로 로그인" class="kakao-login">
+                </div>
+            </div>
+            </section>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
