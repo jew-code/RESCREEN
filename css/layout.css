@@ -263,6 +263,14 @@ h1 img {
   background-position: center;
   z-index: -1;
 }
+.all-text02,
+.all-text03,
+.all-text04 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
 .main-content {
   position: relative;
   top: 80px;

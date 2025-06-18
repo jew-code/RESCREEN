@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>영화</title>
-    <link rel="stylesheet" href="../css/movie.css" />
+    <link rel="stylesheet" href="../../css/movie.css" />
+    <script src="../../js/sub/book-movie.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -12,13 +13,13 @@
         <div class="con">
           <!-- 로고 -->
           <h1>
-            <a href="/"><img src="../img/header/logo.png" alt="logo" /></a>
+            <a href="/"><img src="../../img/header/logo.png" alt="logo" /></a>
           </h1>
           <!-- GNB -->
           <nav id="gnb">
             <ul>
               <li>
-                <a href="../introduce.html">회사소개</a>
+                <a href="../../introduce.html">회사소개</a>
               </li>
               <li>
                 <a href="#">예매</a>
@@ -32,7 +33,7 @@
                 </div>
               </li>
               <li>
-                <a href="../funding.html">펀딩</a>
+                <a href="../../funding.html">펀딩</a>
               </li>
               <li>
                 <a href="#">추천영화</a>
@@ -62,7 +63,7 @@
             <h5>찾고 있는 영화가 있나요?</h5>
             <div class="search_img">
               <img
-                src="../img/header/icons/search-interface-symbol.png"
+                src="../../img/header/icons/search-interface-symbol.png"
                 alt="서치바"
               />
             </div>
@@ -72,7 +73,7 @@
             <div class="bell-wrap">
               <button type="button">
                 <img
-                  src="../img/header/icons/bell.png"
+                  src="../../img/header/icons/bell.png"
                   alt="bell"
                   class="bell"
                 />
@@ -106,7 +107,7 @@
               </div>
             </div>
             <button type="button">
-              <img src="../img/header/icons/login.png" alt="login" />
+              <img src="../../img/header/icons/login.png" alt="login" />
             </button>
           </div>
         </div>
@@ -115,7 +116,7 @@
         <section class="main-visual">
           <div class="main-visual-video">
             <video
-              src="./../img/book_movie/8102528-hd_1920_1080_25fps.mp4"
+              src="./../../img/book_movie/8102528-hd_1920_1080_25fps.mp4"
               autoplay
               muted
               loop
@@ -124,13 +125,15 @@
           <!-- 오리지널 티켓 모양 이미지 삽입 -->
           <div class="origainal-ticket">
             <div class="tickets">
+              <!-- 뒷면 -->
+              <a href="">
+                <div class="back">
+                  <img src="./../../img/book_movie/back.png" alt="뒷면" />
+                </div>
+              </a>
               <!-- 앞면 -->
               <div class="front">
-                <img src="./../img/book_movie/front.png" alt="앞면" />
-              </div>
-              <!-- 뒷면 -->
-              <div class="back">
-                <img src="./../img/book_movie/back.png" alt="뒷면" />
+                <img src="./../../img/book_movie/front.png" alt="앞면" />
               </div>
             </div>
           </div>
@@ -139,295 +142,596 @@
           <div class="con">
             <div class="choice">
               <div class="choice-text">
-                <h2 class="ing" onclick=""><a href="#">현재상영작</a></h2>
-                <h2 class="will" onclick=""><a href="#">상영예정작</a></h2>
+                <h2 class="ing" id="showIng"><a href="#">현재상영작</a></h2>
+                <h2 class="will" id="showWill"><a href="#">상영예정작</a></h2>
               </div>
               <div class="bottom-line"></div>
             </div>
-            <div class="card-wrap">
-              <div>
-                <div class="card">
-                  <div class="card-top">
-                    <div class="card-img">
-                      <img
-                        src="./../img/main/sec1/films/image 46.png "
-                        alt=""
-                      />
-                    </div>
-                    <div class="heart-icon">
-                      <img src="./../img/main/heart.png" alt="heart" />
-                    </div>
-                    <div class="overlay">
-                      <div class="overlay-top">
+            <div id="movieCardsContainer">
+              <div class="card-wrap" id="ingMovies">
+                <div class="card01">
+                  <div class="card">
+                    <div class="card-top">
+                      <div class="card-img">
                         <img
-                          src="./../img/main/sec1/age/image 100.png"
-                          alt="15세"
-                        />
-                        <h4>중경삼림</h4>
-                      </div>
-                      <div class="overlay-center">
-                        <h5>감독: 왕가위</h5>
-                        <h5>출연진: 임청하, 양조위, 왕페이, 금성무</h5>
-                        <h5>장르: 드라마</h5>
-                      </div>
-                      <div class="overlay-bottom">
-                        <p>
-                          1994년 홍콩, “내 사랑의 유통기한은 만 년으로 하고
-                          싶다” 만우절의 이별 통보가 거짓말이길 바라며 술집을
-                          찾은 경찰 223 고단한 하루를 보내고 술집에 들어온
-                          금발머리의 마약밀매상 "그녀가 떠난 후 이 방의 모든
-                          것들이 슬퍼한다" 여자친구가 남긴 이별 편지를 외면하고
-                          있는 경찰 663 편지 속에 담긴 그의 아파트 열쇠를 손에
-                          쥔 단골집 점원 페이 네 사람이 만들어낸 두 개의 로맨스
-                          새로운 사랑을 만나는 방법에 대한 독특한 상상력
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-text">
-                    <div class="text-top">
-                      <div class="age-img">
-                        <img
-                          src="./../img/main/sec1/age/image 100.png"
+                          src="./../../img/main/sec1/films/image 46.png "
                           alt=""
                         />
                       </div>
-                      <h3 class="movie-name">중경삼림</h3>
+                      <div class="heart-icon">
+                        <img src="./../../img/main/heart.png" alt="heart" />
+                      </div>
+                      <div class="overlay">
+                        <div class="overlay-top">
+                          <img
+                            src="./../../img/main/sec1/age/image 100.png"
+                            alt="15세"
+                          />
+                          <h4>중경삼림</h4>
+                        </div>
+                        <div class="overlay-center">
+                          <h5>감독: 왕가위</h5>
+                          <h5>출연진: 임청하, 양조위, 왕페이, 금성무</h5>
+                          <h5>장르: 드라마</h5>
+                        </div>
+                        <div class="overlay-bottom">
+                          <p>
+                            1994년 홍콩, “내 사랑의 유통기한은 만 년으로 하고
+                            싶다” 만우절의 이별 통보가 거짓말이길 바라며 술집을
+                            찾은 경찰 223 고단한 하루를 보내고 술집에 들어온
+                            금발머리의 마약밀매상 "그녀가 떠난 후 이 방의 모든
+                            것들이 슬퍼한다" 여자친구가 남긴 이별 편지를
+                            외면하고 있는 경찰 663 편지 속에 담긴 그의 아파트
+                            열쇠를 손에 쥔 단골집 점원 페이 네 사람이 만들어낸
+                            두 개의 로맨스 새로운 사랑을 만나는 방법에 대한
+                            독특한 상상력
+                          </p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="text-middle">
-                      <h4>재개봉일: 2025.08.01</h4>
-                      <h4>예매율: 12.5%</h4>
+                    <div class="card-text">
+                      <div class="text-top">
+                        <div class="age-img">
+                          <img
+                            src="./../../img/main/sec1/age/image 100.png"
+                            alt=""
+                          />
+                        </div>
+                        <h3 class="movie-name">중경삼림</h3>
+                      </div>
+                      <div class="text-middle">
+                        <h4>재개봉일: 2025.08.01</h4>
+                        <h4>예매율: 12.5%</h4>
+                      </div>
+                      <div class="text-bottom">
+                        <button type="button">예매하기</button>
+                      </div>
                     </div>
-                    <div class="text-bottom">
-                      <button type="button">예매하기</button>
+                  </div>
+                  <div class="card">
+                    <div class="card-top">
+                      <div class="card-img">
+                        <img
+                          src="./../../img/main/sec1/films/image 46.png "
+                          alt=""
+                        />
+                      </div>
+                      <div class="heart-icon">
+                        <img src="./../../img/main/heart.png" alt="heart" />
+                      </div>
+                      <div class="overlay">
+                        <div class="overlay-top">
+                          <img
+                            src="./../../img/main/sec1/age/image 100.png"
+                            alt="15세"
+                          />
+                          <h4>중경삼림</h4>
+                        </div>
+                        <div class="overlay-center">
+                          <h5>감독: 왕가위</h5>
+                          <h5>출연진: 임청하, 양조위, 왕페이, 금성무</h5>
+                          <h5>장르: 드라마</h5>
+                        </div>
+                        <div class="overlay-bottom">
+                          <p>
+                            1994년 홍콩, “내 사랑의 유통기한은 만 년으로 하고
+                            싶다” 만우절의 이별 통보가 거짓말이길 바라며 술집을
+                            찾은 경찰 223 고단한 하루를 보내고 술집에 들어온
+                            금발머리의 마약밀매상 "그녀가 떠난 후 이 방의 모든
+                            것들이 슬퍼한다" 여자친구가 남긴 이별 편지를
+                            외면하고 있는 경찰 663 편지 속에 담긴 그의 아파트
+                            열쇠를 손에 쥔 단골집 점원 페이 네 사람이 만들어낸
+                            두 개의 로맨스 새로운 사랑을 만나는 방법에 대한
+                            독특한 상상력
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-text">
+                      <div class="text-top">
+                        <div class="age-img">
+                          <img
+                            src="./../../img/main/sec1/age/image 100.png"
+                            alt=""
+                          />
+                        </div>
+                        <h3 class="movie-name">중경삼림</h3>
+                      </div>
+                      <div class="text-middle">
+                        <h4>재개봉일: 2025.08.01</h4>
+                        <h4>예매율: 12.5%</h4>
+                      </div>
+                      <div class="text-bottom">
+                        <button type="button">예매하기</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-top">
+                      <div class="card-img">
+                        <img
+                          src="./../../img/main/sec1/films/image 46.png "
+                          alt=""
+                        />
+                      </div>
+                      <div class="heart-icon">
+                        <img src="./../../img/main/heart.png" alt="heart" />
+                      </div>
+                      <div class="overlay">
+                        <div class="overlay-top">
+                          <img
+                            src="./../../img/main/sec1/age/image 100.png"
+                            alt="15세"
+                          />
+                          <h4>중경삼림</h4>
+                        </div>
+                        <div class="overlay-center">
+                          <h5>감독: 왕가위</h5>
+                          <h5>출연진: 임청하, 양조위, 왕페이, 금성무</h5>
+                          <h5>장르: 드라마</h5>
+                        </div>
+                        <div class="overlay-bottom">
+                          <p>
+                            1994년 홍콩, “내 사랑의 유통기한은 만 년으로 하고
+                            싶다” 만우절의 이별 통보가 거짓말이길 바라며 술집을
+                            찾은 경찰 223 고단한 하루를 보내고 술집에 들어온
+                            금발머리의 마약밀매상 "그녀가 떠난 후 이 방의 모든
+                            것들이 슬퍼한다" 여자친구가 남긴 이별 편지를
+                            외면하고 있는 경찰 663 편지 속에 담긴 그의 아파트
+                            열쇠를 손에 쥔 단골집 점원 페이 네 사람이 만들어낸
+                            두 개의 로맨스 새로운 사랑을 만나는 방법에 대한
+                            독특한 상상력
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-text">
+                      <div class="text-top">
+                        <div class="age-img">
+                          <img
+                            src="./../../img/main/sec1/age/image 100.png"
+                            alt=""
+                          />
+                        </div>
+                        <h3 class="movie-name">중경삼림</h3>
+                      </div>
+                      <div class="text-middle">
+                        <h4>재개봉일: 2025.08.01</h4>
+                        <h4>예매율: 12.5%</h4>
+                      </div>
+                      <div class="text-bottom">
+                        <button type="button">예매하기</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-top">
+                      <div class="card-img">
+                        <img
+                          src="./../../img/main/sec1/films/image 46.png "
+                          alt=""
+                        />
+                      </div>
+                      <div class="heart-icon">
+                        <img src="./../../img/main/heart.png" alt="heart" />
+                      </div>
+                      <div class="overlay">
+                        <div class="overlay-top">
+                          <img
+                            src="./../../img/main/sec1/age/image 100.png"
+                            alt="15세"
+                          />
+                          <h4>중경삼림</h4>
+                        </div>
+                        <div class="overlay-center">
+                          <h5>감독: 왕가위</h5>
+                          <h5>출연진: 임청하, 양조위, 왕페이, 금성무</h5>
+                          <h5>장르: 드라마</h5>
+                        </div>
+                        <div class="overlay-bottom">
+                          <p>
+                            1994년 홍콩, “내 사랑의 유통기한은 만 년으로 하고
+                            싶다” 만우절의 이별 통보가 거짓말이길 바라며 술집을
+                            찾은 경찰 223 고단한 하루를 보내고 술집에 들어온
+                            금발머리의 마약밀매상 "그녀가 떠난 후 이 방의 모든
+                            것들이 슬퍼한다" 여자친구가 남긴 이별 편지를
+                            외면하고 있는 경찰 663 편지 속에 담긴 그의 아파트
+                            열쇠를 손에 쥔 단골집 점원 페이 네 사람이 만들어낸
+                            두 개의 로맨스 새로운 사랑을 만나는 방법에 대한
+                            독특한 상상력
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-text">
+                      <div class="text-top">
+                        <div class="age-img">
+                          <img
+                            src="./../../img/main/sec1/age/image 100.png"
+                            alt=""
+                          />
+                        </div>
+                        <h3 class="movie-name">중경삼림</h3>
+                      </div>
+                      <div class="text-middle">
+                        <h4>재개봉일: 2025.08.01</h4>
+                        <h4>예매율: 12.5%</h4>
+                      </div>
+                      <div class="text-bottom">
+                        <button type="button">예매하기</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-top">
+                      <div class="card-img">
+                        <img
+                          src="./../../img/main/sec1/films/image 46.png "
+                          alt=""
+                        />
+                      </div>
+                      <div class="heart-icon">
+                        <img src="./../../img/main/heart.png" alt="heart" />
+                      </div>
+                      <div class="overlay">
+                        <div class="overlay-top">
+                          <img
+                            src="./../../img/main/sec1/age/image 100.png"
+                            alt="15세"
+                          />
+                          <h4>중경삼림</h4>
+                        </div>
+                        <div class="overlay-center">
+                          <h5>감독: 왕가위</h5>
+                          <h5>출연진: 임청하, 양조위, 왕페이, 금성무</h5>
+                          <h5>장르: 드라마</h5>
+                        </div>
+                        <div class="overlay-bottom">
+                          <p>
+                            1994년 홍콩, “내 사랑의 유통기한은 만 년으로 하고
+                            싶다” 만우절의 이별 통보가 거짓말이길 바라며 술집을
+                            찾은 경찰 223 고단한 하루를 보내고 술집에 들어온
+                            금발머리의 마약밀매상 "그녀가 떠난 후 이 방의 모든
+                            것들이 슬퍼한다" 여자친구가 남긴 이별 편지를
+                            외면하고 있는 경찰 663 편지 속에 담긴 그의 아파트
+                            열쇠를 손에 쥔 단골집 점원 페이 네 사람이 만들어낸
+                            두 개의 로맨스 새로운 사랑을 만나는 방법에 대한
+                            독특한 상상력
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-text">
+                      <div class="text-top">
+                        <div class="age-img">
+                          <img
+                            src="./../../img/main/sec1/age/image 100.png"
+                            alt=""
+                          />
+                        </div>
+                        <h3 class="movie-name">중경삼림</h3>
+                      </div>
+                      <div class="text-middle">
+                        <h4>재개봉일: 2025.08.01</h4>
+                        <h4>예매율: 12.5%</h4>
+                      </div>
+                      <div class="text-bottom">
+                        <button type="button">예매하기</button>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="card">
-                  <div class="card-top">
-                    <div class="card-img">
-                      <img
-                        src="./../img/main/sec1/films/image 46.png "
-                        alt=""
-                      />
-                    </div>
-                    <div class="heart-icon">
-                      <img src="./../img/main/heart.png" alt="heart" />
-                    </div>
-                    <div class="overlay">
-                      <div class="overlay-top">
+              </div>
+              <div class="card-wrap" id="willMovies" style="display: none">
+                <div class="card01">
+                  <div class="card">
+                    <div class="card-top">
+                      <div class="card-img">
                         <img
-                          src="./../img/main/sec1/age/image 100.png"
-                          alt="15세"
-                        />
-                        <h4>중경삼림</h4>
-                      </div>
-                      <div class="overlay-center">
-                        <h5>감독: 왕가위</h5>
-                        <h5>출연진: 임청하, 양조위, 왕페이, 금성무</h5>
-                        <h5>장르: 드라마</h5>
-                      </div>
-                      <div class="overlay-bottom">
-                        <p>
-                          1994년 홍콩, “내 사랑의 유통기한은 만 년으로 하고
-                          싶다” 만우절의 이별 통보가 거짓말이길 바라며 술집을
-                          찾은 경찰 223 고단한 하루를 보내고 술집에 들어온
-                          금발머리의 마약밀매상 "그녀가 떠난 후 이 방의 모든
-                          것들이 슬퍼한다" 여자친구가 남긴 이별 편지를 외면하고
-                          있는 경찰 663 편지 속에 담긴 그의 아파트 열쇠를 손에
-                          쥔 단골집 점원 페이 네 사람이 만들어낸 두 개의 로맨스
-                          새로운 사랑을 만나는 방법에 대한 독특한 상상력
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-text">
-                    <div class="text-top">
-                      <div class="age-img">
-                        <img
-                          src="./../img/main/sec1/age/image 100.png"
+                          src="./../../img/main/sec1/films/image 46.png "
                           alt=""
                         />
                       </div>
-                      <h3 class="movie-name">중경삼림</h3>
+                      <div class="heart-icon">
+                        <img src="./../../img/main/heart.png" alt="heart" />
+                      </div>
+                      <div class="overlay">
+                        <div class="overlay-top">
+                          <img
+                            src="./../../img/main/sec1/age/image 100.png"
+                            alt="15세"
+                          />
+                          <h4>제목란</h4>
+                        </div>
+                        <div class="overlay-center">
+                          <h5>감독: 왕가위</h5>
+                          <h5>출연진: 임청하, 양조위, 왕페이, 금성무</h5>
+                          <h5>장르: 드라마</h5>
+                        </div>
+                        <div class="overlay-bottom">
+                          <p>
+                            1994년 홍콩, “내 사랑의 유통기한은 만 년으로 하고
+                            싶다” 만우절의 이별 통보가 거짓말이길 바라며 술집을
+                            찾은 경찰 223 고단한 하루를 보내고 술집에 들어온
+                            금발머리의 마약밀매상 "그녀가 떠난 후 이 방의 모든
+                            것들이 슬퍼한다" 여자친구가 남긴 이별 편지를
+                            외면하고 있는 경찰 663 편지 속에 담긴 그의 아파트
+                            열쇠를 손에 쥔 단골집 점원 페이 네 사람이 만들어낸
+                            두 개의 로맨스 새로운 사랑을 만나는 방법에 대한
+                            독특한 상상력
+                          </p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="text-middle">
-                      <h4>재개봉일: 2025.08.01</h4>
-                      <h4>예매율: 12.5%</h4>
-                    </div>
-                    <div class="text-bottom">
-                      <button type="button">예매하기</button>
+                    <div class="card-text">
+                      <div class="text-top">
+                        <div class="age-img">
+                          <img
+                            src="./../../img/main/sec1/age/image 100.png"
+                            alt=""
+                          />
+                        </div>
+                        <h3 class="movie-name">중경삼림</h3>
+                      </div>
+                      <div class="text-middle">
+                        <h4>재개봉일: 2025.08.01</h4>
+                        <h4>예매율: 12.5%</h4>
+                      </div>
+                      <div class="text-bottom">
+                        <button type="button">예매하기</button>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="card">
-                  <div class="card-top">
-                    <div class="card-img">
-                      <img
-                        src="./../img/main/sec1/films/image 46.png "
-                        alt=""
-                      />
-                    </div>
-                    <div class="heart-icon">
-                      <img src="./../img/main/heart.png" alt="heart" />
-                    </div>
-                    <div class="overlay">
-                      <div class="overlay-top">
+                  <div class="card">
+                    <div class="card-top">
+                      <div class="card-img">
                         <img
-                          src="./../img/main/sec1/age/image 100.png"
-                          alt="15세"
-                        />
-                        <h4>중경삼림</h4>
-                      </div>
-                      <div class="overlay-center">
-                        <h5>감독: 왕가위</h5>
-                        <h5>출연진: 임청하, 양조위, 왕페이, 금성무</h5>
-                        <h5>장르: 드라마</h5>
-                      </div>
-                      <div class="overlay-bottom">
-                        <p>
-                          1994년 홍콩, “내 사랑의 유통기한은 만 년으로 하고
-                          싶다” 만우절의 이별 통보가 거짓말이길 바라며 술집을
-                          찾은 경찰 223 고단한 하루를 보내고 술집에 들어온
-                          금발머리의 마약밀매상 "그녀가 떠난 후 이 방의 모든
-                          것들이 슬퍼한다" 여자친구가 남긴 이별 편지를 외면하고
-                          있는 경찰 663 편지 속에 담긴 그의 아파트 열쇠를 손에
-                          쥔 단골집 점원 페이 네 사람이 만들어낸 두 개의 로맨스
-                          새로운 사랑을 만나는 방법에 대한 독특한 상상력
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-text">
-                    <div class="text-top">
-                      <div class="age-img">
-                        <img
-                          src="./../img/main/sec1/age/image 100.png"
+                          src="./../../img/main/sec1/films/image 46.png "
                           alt=""
                         />
                       </div>
-                      <h3 class="movie-name">중경삼림</h3>
+                      <div class="heart-icon">
+                        <img src="./../../img/main/heart.png" alt="heart" />
+                      </div>
+                      <div class="overlay">
+                        <div class="overlay-top">
+                          <img
+                            src="./../../img/main/sec1/age/image 100.png"
+                            alt="15세"
+                          />
+                          <h4>중경삼림</h4>
+                        </div>
+                        <div class="overlay-center">
+                          <h5>감독: 왕가위</h5>
+                          <h5>출연진: 임청하, 양조위, 왕페이, 금성무</h5>
+                          <h5>장르: 드라마</h5>
+                        </div>
+                        <div class="overlay-bottom">
+                          <p>
+                            1994년 홍콩, “내 사랑의 유통기한은 만 년으로 하고
+                            싶다” 만우절의 이별 통보가 거짓말이길 바라며 술집을
+                            찾은 경찰 223 고단한 하루를 보내고 술집에 들어온
+                            금발머리의 마약밀매상 "그녀가 떠난 후 이 방의 모든
+                            것들이 슬퍼한다" 여자친구가 남긴 이별 편지를
+                            외면하고 있는 경찰 663 편지 속에 담긴 그의 아파트
+                            열쇠를 손에 쥔 단골집 점원 페이 네 사람이 만들어낸
+                            두 개의 로맨스 새로운 사랑을 만나는 방법에 대한
+                            독특한 상상력
+                          </p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="text-middle">
-                      <h4>재개봉일: 2025.08.01</h4>
-                      <h4>예매율: 12.5%</h4>
-                    </div>
-                    <div class="text-bottom">
-                      <button type="button">예매하기</button>
+                    <div class="card-text">
+                      <div class="text-top">
+                        <div class="age-img">
+                          <img
+                            src="./../../img/main/sec1/age/image 100.png"
+                            alt=""
+                          />
+                        </div>
+                        <h3 class="movie-name">중경삼림</h3>
+                      </div>
+                      <div class="text-middle">
+                        <h4>재개봉일: 2025.08.01</h4>
+                        <h4>예매율: 12.5%</h4>
+                      </div>
+                      <div class="text-bottom">
+                        <button type="button">예매하기</button>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="card">
-                  <div class="card-top">
-                    <div class="card-img">
-                      <img
-                        src="./../img/main/sec1/films/image 46.png "
-                        alt=""
-                      />
-                    </div>
-                    <div class="heart-icon">
-                      <img src="./../img/main/heart.png" alt="heart" />
-                    </div>
-                    <div class="overlay">
-                      <div class="overlay-top">
+                  <div class="card">
+                    <div class="card-top">
+                      <div class="card-img">
                         <img
-                          src="./../img/main/sec1/age/image 100.png"
-                          alt="15세"
-                        />
-                        <h4>중경삼림</h4>
-                      </div>
-                      <div class="overlay-center">
-                        <h5>감독: 왕가위</h5>
-                        <h5>출연진: 임청하, 양조위, 왕페이, 금성무</h5>
-                        <h5>장르: 드라마</h5>
-                      </div>
-                      <div class="overlay-bottom">
-                        <p>
-                          1994년 홍콩, “내 사랑의 유통기한은 만 년으로 하고
-                          싶다” 만우절의 이별 통보가 거짓말이길 바라며 술집을
-                          찾은 경찰 223 고단한 하루를 보내고 술집에 들어온
-                          금발머리의 마약밀매상 "그녀가 떠난 후 이 방의 모든
-                          것들이 슬퍼한다" 여자친구가 남긴 이별 편지를 외면하고
-                          있는 경찰 663 편지 속에 담긴 그의 아파트 열쇠를 손에
-                          쥔 단골집 점원 페이 네 사람이 만들어낸 두 개의 로맨스
-                          새로운 사랑을 만나는 방법에 대한 독특한 상상력
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-text">
-                    <div class="text-top">
-                      <div class="age-img">
-                        <img
-                          src="./../img/main/sec1/age/image 100.png"
+                          src="./../../img/main/sec1/films/image 46.png "
                           alt=""
                         />
                       </div>
-                      <h3 class="movie-name">중경삼림</h3>
+                      <div class="heart-icon">
+                        <img src="./../../img/main/heart.png" alt="heart" />
+                      </div>
+                      <div class="overlay">
+                        <div class="overlay-top">
+                          <img
+                            src="./../../img/main/sec1/age/image 100.png"
+                            alt="15세"
+                          />
+                          <h4>중경삼림</h4>
+                        </div>
+                        <div class="overlay-center">
+                          <h5>감독: 왕가위</h5>
+                          <h5>출연진: 임청하, 양조위, 왕페이, 금성무</h5>
+                          <h5>장르: 드라마</h5>
+                        </div>
+                        <div class="overlay-bottom">
+                          <p>
+                            1994년 홍콩, “내 사랑의 유통기한은 만 년으로 하고
+                            싶다” 만우절의 이별 통보가 거짓말이길 바라며 술집을
+                            찾은 경찰 223 고단한 하루를 보내고 술집에 들어온
+                            금발머리의 마약밀매상 "그녀가 떠난 후 이 방의 모든
+                            것들이 슬퍼한다" 여자친구가 남긴 이별 편지를
+                            외면하고 있는 경찰 663 편지 속에 담긴 그의 아파트
+                            열쇠를 손에 쥔 단골집 점원 페이 네 사람이 만들어낸
+                            두 개의 로맨스 새로운 사랑을 만나는 방법에 대한
+                            독특한 상상력
+                          </p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="text-middle">
-                      <h4>재개봉일: 2025.08.01</h4>
-                      <h4>예매율: 12.5%</h4>
-                    </div>
-                    <div class="text-bottom">
-                      <button type="button">예매하기</button>
+                    <div class="card-text">
+                      <div class="text-top">
+                        <div class="age-img">
+                          <img
+                            src="./../../img/main/sec1/age/image 100.png"
+                            alt=""
+                          />
+                        </div>
+                        <h3 class="movie-name">중경삼림</h3>
+                      </div>
+                      <div class="text-middle">
+                        <h4>재개봉일: 2025.08.01</h4>
+                        <h4>예매율: 12.5%</h4>
+                      </div>
+                      <div class="text-bottom">
+                        <button type="button">예매하기</button>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="card">
-                  <div class="card-top">
-                    <div class="card-img">
-                      <img
-                        src="./../img/main/sec1/films/image 46.png "
-                        alt=""
-                      />
-                    </div>
-                    <div class="heart-icon">
-                      <img src="./../img/main/heart.png" alt="heart" />
-                    </div>
-                    <div class="overlay">
-                      <div class="overlay-top">
+                  <div class="card">
+                    <div class="card-top">
+                      <div class="card-img">
                         <img
-                          src="./../img/main/sec1/age/image 100.png"
-                          alt="15세"
-                        />
-                        <h4>중경삼림</h4>
-                      </div>
-                      <div class="overlay-center">
-                        <h5>감독: 왕가위</h5>
-                        <h5>출연진: 임청하, 양조위, 왕페이, 금성무</h5>
-                        <h5>장르: 드라마</h5>
-                      </div>
-                      <div class="overlay-bottom">
-                        <p>
-                          1994년 홍콩, “내 사랑의 유통기한은 만 년으로 하고
-                          싶다” 만우절의 이별 통보가 거짓말이길 바라며 술집을
-                          찾은 경찰 223 고단한 하루를 보내고 술집에 들어온
-                          금발머리의 마약밀매상 "그녀가 떠난 후 이 방의 모든
-                          것들이 슬퍼한다" 여자친구가 남긴 이별 편지를 외면하고
-                          있는 경찰 663 편지 속에 담긴 그의 아파트 열쇠를 손에
-                          쥔 단골집 점원 페이 네 사람이 만들어낸 두 개의 로맨스
-                          새로운 사랑을 만나는 방법에 대한 독특한 상상력
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-text">
-                    <div class="text-top">
-                      <div class="age-img">
-                        <img
-                          src="./../img/main/sec1/age/image 100.png"
+                          src="./../../img/main/sec1/films/image 46.png "
                           alt=""
                         />
                       </div>
-                      <h3 class="movie-name">중경삼림</h3>
+                      <div class="heart-icon">
+                        <img src="./../../img/main/heart.png" alt="heart" />
+                      </div>
+                      <div class="overlay">
+                        <div class="overlay-top">
+                          <img
+                            src="./../../img/main/sec1/age/image 100.png"
+                            alt="15세"
+                          />
+                          <h4>중경삼림</h4>
+                        </div>
+                        <div class="overlay-center">
+                          <h5>감독: 왕가위</h5>
+                          <h5>출연진: 임청하, 양조위, 왕페이, 금성무</h5>
+                          <h5>장르: 드라마</h5>
+                        </div>
+                        <div class="overlay-bottom">
+                          <p>
+                            1994년 홍콩, “내 사랑의 유통기한은 만 년으로 하고
+                            싶다” 만우절의 이별 통보가 거짓말이길 바라며 술집을
+                            찾은 경찰 223 고단한 하루를 보내고 술집에 들어온
+                            금발머리의 마약밀매상 "그녀가 떠난 후 이 방의 모든
+                            것들이 슬퍼한다" 여자친구가 남긴 이별 편지를
+                            외면하고 있는 경찰 663 편지 속에 담긴 그의 아파트
+                            열쇠를 손에 쥔 단골집 점원 페이 네 사람이 만들어낸
+                            두 개의 로맨스 새로운 사랑을 만나는 방법에 대한
+                            독특한 상상력
+                          </p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="text-middle">
-                      <h4>재개봉일: 2025.08.01</h4>
-                      <h4>예매율: 12.5%</h4>
+                    <div class="card-text">
+                      <div class="text-top">
+                        <div class="age-img">
+                          <img
+                            src="./../../img/main/sec1/age/image 100.png"
+                            alt=""
+                          />
+                        </div>
+                        <h3 class="movie-name">중경삼림</h3>
+                      </div>
+                      <div class="text-middle">
+                        <h4>재개봉일: 2025.08.01</h4>
+                        <h4>예매율: 12.5%</h4>
+                      </div>
+                      <div class="text-bottom">
+                        <button type="button">예매하기</button>
+                      </div>
                     </div>
-                    <div class="text-bottom">
-                      <button type="button">예매하기</button>
+                  </div>
+                  <div class="card">
+                    <div class="card-top">
+                      <div class="card-img">
+                        <img
+                          src="./../../img/main/sec1/films/image 46.png "
+                          alt=""
+                        />
+                      </div>
+                      <div class="heart-icon">
+                        <img src="./../../img/main/heart.png" alt="heart" />
+                      </div>
+                      <div class="overlay">
+                        <div class="overlay-top">
+                          <img
+                            src="./../../img/main/sec1/age/image 100.png"
+                            alt="15세"
+                          />
+                          <h4>중경삼림</h4>
+                        </div>
+                        <div class="overlay-center">
+                          <h5>감독: 왕가위</h5>
+                          <h5>출연진: 임청하, 양조위, 왕페이, 금성무</h5>
+                          <h5>장르: 드라마</h5>
+                        </div>
+                        <div class="overlay-bottom">
+                          <p>
+                            1994년 홍콩, “내 사랑의 유통기한은 만 년으로 하고
+                            싶다” 만우절의 이별 통보가 거짓말이길 바라며 술집을
+                            찾은 경찰 223 고단한 하루를 보내고 술집에 들어온
+                            금발머리의 마약밀매상 "그녀가 떠난 후 이 방의 모든
+                            것들이 슬퍼한다" 여자친구가 남긴 이별 편지를
+                            외면하고 있는 경찰 663 편지 속에 담긴 그의 아파트
+                            열쇠를 손에 쥔 단골집 점원 페이 네 사람이 만들어낸
+                            두 개의 로맨스 새로운 사랑을 만나는 방법에 대한
+                            독특한 상상력
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-text">
+                      <div class="text-top">
+                        <div class="age-img">
+                          <img
+                            src="./../../img/main/sec1/age/image 100.png"
+                            alt=""
+                          />
+                        </div>
+                        <h3 class="movie-name">중경삼림</h3>
+                      </div>
+                      <div class="text-middle">
+                        <h4>재개봉일: 2025.08.01</h4>
+                        <h4>예매율: 12.5%</h4>
+                      </div>
+                      <div class="text-bottom">
+                        <button type="button">예매하기</button>
+                      </div>
                     </div>
                   </div>
                 </div>

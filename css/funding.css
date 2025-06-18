@@ -271,11 +271,16 @@ main .con {
 .list-style-third {
   color: #777;
 }
+.choice {
+  margin-bottom: 124px;
+}
 .choice-text {
   display: flex;
   gap: 44px;
   margin-left: 20px;
   font-size: 16px;
+  position: relative; /* .bottom-line의 기준점이 됩니다. */
+  margin-bottom: 0; /* .choice-text 아래의 불필요한 마진을 제거합니다. */
 }
 .ing {
   font-weight: 550;
@@ -284,10 +289,30 @@ main .con {
   color: #555;
 }
 .bottom-line {
-  width: 88px;
   height: 4px;
-  background-color: var(--main-color);
-  margin-bottom: 120px;
+  background-color: var(--main-color); /* main-color 변수를 사용하세요. */
+  position: absolute;
+  left: 352px;
+  top: 232px;
+  transition: width 0.3s ease, transform 0.3s ease;
+}
+.choice-text h2 {
+  cursor: pointer; /* 클릭 가능한 요소임을 나타냄 */
+  padding-bottom: 12px; /* 밑줄이 이동할 공간을 확보 */
+  white-space: nowrap; /* 텍스트가 줄 바꿈되지 않도록 */
+}
+
+.choice-text h2 a {
+  color: #ccc; /* 기본 비활성 색상 */
+  text-decoration: none;
+  transition: color 0.3s ease, font-weight 0.3s ease; /* 색상 및 굵기 변화 애니메이션 */
+  font-weight: 550; /* 기본 폰트 굵기 */
+}
+
+/* JavaScript에서 'active' 클래스가 추가되었을 때 적용 */
+.choice-text h2.active a {
+  color: #000; /* 활성 상태 글자색 (더 진하게) */
+  font-weight: 700; /* 글자를 더 진하게 */
 }
 .card-wrap {
   margin-bottom: 92px;
@@ -533,7 +558,7 @@ button h3 {
 }
 .card:hover,
 .card2:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
 }
 /* 푸터 */
 footer {
