@@ -588,6 +588,7 @@ h1 img {
   background-color: var(--main-color);
   color: #fff;
 }
+
 /* 카드 2개 */
 .vote-cards {
   display: flex;
@@ -620,7 +621,7 @@ h1 img {
   right: 0;
   bottom: 0;
   background: url(../img/main/sche.jpg) no-repeat;
-  background-size: cover; /* 필요 시 */
+  background-size: cover;
   opacity: 0.66;
   z-index: -1;
 }
@@ -640,7 +641,7 @@ h1 img {
   right: 0;
   bottom: 0;
   background: url(../img/main/location.jpg) no-repeat;
-  background-size: cover; /* 필요 시 */
+  background-size: cover;
   opacity: 0.66;
   z-index: -1;
 }
