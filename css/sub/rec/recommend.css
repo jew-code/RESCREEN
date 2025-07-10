@@ -363,7 +363,10 @@ main {
 .holiday,
 .horror,
 .list {
+  width: 1600px;
+  height: fit-content;
   margin-left: 180px;
+  margin-bottom: 184px;
 }
 .genre {
   margin-top: 94px;
@@ -373,7 +376,7 @@ main {
 .horror h3 {
   font-size: 28px;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 .search {
   width: 300px;
@@ -414,35 +417,47 @@ main {
   margin-bottom: 40px;
   margin-left: 4px;
 }
-.cards {
-  display: flex;
-  gap: 20px;
+.swiper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 }
-.card {
-  width: 324px;
+
+.swiper-wrapper {
+  width: 100%;
+  /* align-items: stretch; */
+}
+.swiper-slide {
+  /* width: 300px; */
   height: 405px;
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.card-img {
+  width: 100%;
+  height: 232px;
+  overflow: hidden;
 }
 .card-img > img {
-  width: 324px;
-  height: 232px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 20px 20px 0 0;
 }
 .card-txt {
-  width: 266px;
-  margin-top: 20px;
-  margin-left: 20px;
+  width: calc(100% - 40px);
+  margin: 20px;
+  flex-grow: 1;
 }
 .card-txt h4 {
   font-size: 20px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 .card-num {
   display: flex;
   gap: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 .card-num h6 {
   color: var(--main-color);
@@ -462,7 +477,7 @@ main {
 .card-chips {
   display: flex;
   gap: 4px;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 .card-chip {
   font-size: 12px;
@@ -473,4 +488,130 @@ main {
 .year-hour {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.swiper-button-prev {
+  left: 0px;
+}
+
+.swiper-button-next {
+  right: 0px;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+  display: none;
+}
+.profile {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.profile-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 100px;
+}
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+}
+.profile-txt h6 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.profile-txt h5 {
+  font-size: 24px;
+  color: var(--main-color);
+}
+.list-movies {
+  display: flex;
+  gap: 20px;
+}
+.list-movie {
+  width: 332px;
+  height: 160px;
+}
+.list-movie > img {
+  width: 100%;
+  height: 100%;
+}
+/* 푸터 */
+footer {
+  border-top: 1px solid rgba(136, 136, 136, 0.2);
+  box-sizing: border-box;
+  padding: 20px 0;
+  font-size: 12px;
+  color: #333;
+}
+.footer-top {
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(136, 136, 136, 0.2);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
+  margin-left: 140px;
+  margin-bottom: 8px;
+}
+.footer-links li a {
+  text-decoration: none;
+  color: #555;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-left: 140px;
+  color: #606060;
+}
+.footer-left {
+  margin-top: 24px;
+  flex: 1 1 150px;
+  min-width: 150px;
+  line-height: 2.8;
+}
+.footer-left p:first-of-type {
+  line-height: 1.2;
+}
+.footer-left span {
+  font-size: 8px;
+}
+.footer-center {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 2 1 300px;
+  min-width: 300px;
+  line-height: 1.6;
+}
+.footer-right {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer-right img {
+  width: 80px;
+  margin-right: 160px;
 }

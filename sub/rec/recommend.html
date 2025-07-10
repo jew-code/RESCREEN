@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>추천영화</title>
     <link rel="stylesheet" href="../../css/sub/rec/recommend.css" />
+    <script src="../../js/sub/rec-recommend.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -177,212 +184,810 @@
             <h5>찾고 있는 영화가 있으신가요?</h5>
           </div>
           <div class="genre-buttons">
+            <button>전체</button>
             <button>드라마</button>
             <button>로맨스</button>
             <button>스릴러</button>
             <button>액션</button>
             <button>추리/서스펜스</button>
-            <button>공포/미스테리</button>
+            <button>공포</button>
+            <button>미스터리</button>
             <button>sf</button>
             <button>코미디</button>
             <button>다큐멘터리</button>
             <button>애니메이션</button>
             <button>뮤지컬</button>
             <button>블록버스터</button>
+            <button>판타지</button>
           </div>
-          <div class="cards">
-            <div class="card">
-              <div class="card-img">
-                <img src="../../img/rec_recommend/img1-1.png" alt="" />
-              </div>
-              <div class="card-txt">
-                <h4>콘클라베</h4>
-                <div class="card-num">
-                  <div class="card-stars">
-                    <div class="card-star">
-                      <img src="../../img/rec_recommend/star.png" alt="별" />
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card-img">
+                  <img src="../../img/rec_recommend/img1-1.png" alt="" />
+                </div>
+                <div class="card-txt">
+                  <h4>콘클라베</h4>
+                  <div class="card-num">
+                    <div class="card-stars">
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
                     </div>
-                    <div class="card-star">
-                      <img src="../../img/rec_recommend/star.png" alt="별" />
-                    </div>
-                    <div class="card-star">
-                      <img src="../../img/rec_recommend/star.png" alt="별" />
-                    </div>
-                    <div class="card-star">
-                      <img src="../../img/rec_recommend/star.png" alt="별" />
-                    </div>
-                    <div class="card-star">
-                      <img src="../../img/rec_recommend/star.png" alt="별" />
-                    </div>
+                    <h6>(8.9/10)</h6>
                   </div>
-                  <h6>(8.9/10)</h6>
+                  <div class="card-chips">
+                    <span class="card-chip">드라마</span>
+                    <span class="card-chip">스릴러</span>
+                  </div>
+                  <div class="year-hour">
+                    <h6>2025</h6>
+                    <h6>2h 28m</h6>
+                  </div>
                 </div>
-                <div class="card-chips">
-                  <span class="card-chip">드라마</span>
-                  <span class="card-chip">스릴러</span>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img">
+                  <img src="../../img/rec_recommend/image 224.png" alt="" />
                 </div>
-                <div class="year-hour">
-                  <h6>2025</h6>
-                  <h6>2h 28m</h6>
+                <div class="card-txt">
+                  <h4>카사네 : 빼앗는 얼굴</h4>
+                  <div class="card-num">
+                    <div class="card-stars">
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                    </div>
+                    <h6>(8.9/10)</h6>
+                  </div>
+                  <div class="card-chips">
+                    <span class="card-chip">판타지</span>
+                    <span class="card-chip">스릴러</span>
+                    <span class="card-chip">미스터리</span>
+                  </div>
+                  <div class="year-hour">
+                    <h6>2025</h6>
+                    <h6>2h 28m</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img">
+                  <img src="../../img/rec_recommend/image 218 (1).png" alt="" />
+                </div>
+                <div class="card-txt">
+                  <h4>미치광이 삐에로</h4>
+                  <div class="card-num">
+                    <div class="card-stars">
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                    </div>
+                    <h6>(8.9/10)</h6>
+                  </div>
+                  <div class="card-chips">
+                    <span class="card-chip">드라마</span>
+                  </div>
+                  <div class="year-hour">
+                    <h6>2025</h6>
+                    <h6>2h 28m</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img">
+                  <img src="../../img/rec_recommend/image 223.png" alt="" />
+                </div>
+                <div class="card-txt">
+                  <h4>무간도</h4>
+                  <div class="card-num">
+                    <div class="card-stars">
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                    </div>
+                    <h6>(8.9/10)</h6>
+                  </div>
+                  <div class="card-chips">
+                    <span class="card-chip">드라마</span>
+                    <span class="card-chip">액션</span>
+                  </div>
+                  <div class="year-hour">
+                    <h6>2025</h6>
+                    <h6>2h 28m</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img">
+                  <img src="../../img/rec_recommend/img1-1.png" alt="" />
+                </div>
+                <div class="card-txt">
+                  <h4>콘클라베</h4>
+                  <div class="card-num">
+                    <div class="card-stars">
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                    </div>
+                    <h6>(8.9/10)</h6>
+                  </div>
+                  <div class="card-chips">
+                    <span class="card-chip">드라마</span>
+                    <span class="card-chip">스릴러</span>
+                  </div>
+                  <div class="year-hour">
+                    <h6>2025</h6>
+                    <h6>2h 28m</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img">
+                  <img src="../../img/rec_recommend/img1-1.png" alt="" />
+                </div>
+                <div class="card-txt">
+                  <h4>콘클라베</h4>
+                  <div class="card-num">
+                    <div class="card-stars">
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                    </div>
+                    <h6>(8.9/10)</h6>
+                  </div>
+                  <div class="card-chips">
+                    <span class="card-chip">드라마</span>
+                    <span class="card-chip">스릴러</span>
+                  </div>
+                  <div class="year-hour">
+                    <h6>2025</h6>
+                    <h6>2h 28m</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img">
+                  <img src="../../img/rec_recommend/image 222.png" alt="" />
+                </div>
+                <div class="card-txt">
+                  <h4>갈증</h4>
+                  <div class="card-num">
+                    <div class="card-stars">
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                    </div>
+                    <h6>(8.9/10)</h6>
+                  </div>
+                  <div class="card-chips">
+                    <span class="card-chip">드라마</span>
+                    <span class="card-chip">미스터리</span>
+                  </div>
+                  <div class="year-hour">
+                    <h6>2025</h6>
+                    <h6>2h 28m</h6>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="card">
-              <div class="card-img">
-                <img src="../../img/rec_recommend/img1-1.png" alt="" />
-              </div>
-              <div class="card-txt">
-                <h4>콘클라베</h4>
-                <div class="card-num">
-                  <div class="card-stars">
-                    <div class="card-star">
-                      <img src="../../img/rec_recommend/star.png" alt="별" />
-                    </div>
-                    <div class="card-star">
-                      <img src="../../img/rec_recommend/star.png" alt="별" />
-                    </div>
-                    <div class="card-star">
-                      <img src="../../img/rec_recommend/star.png" alt="별" />
-                    </div>
-                    <div class="card-star">
-                      <img src="../../img/rec_recommend/star.png" alt="별" />
-                    </div>
-                    <div class="card-star">
-                      <img src="../../img/rec_recommend/star.png" alt="별" />
-                    </div>
-                  </div>
-                  <h6>(8.9/10)</h6>
-                </div>
-                <div class="card-chips">
-                  <span class="card-chip">드라마</span>
-                  <span class="card-chip">스릴러</span>
-                </div>
-                <div class="year-hour">
-                  <h6>2025</h6>
-                  <h6>2h 28m</h6>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-img">
-                <img src="../../img/rec_recommend/img1-1.png" alt="" />
-              </div>
-              <div class="card-txt">
-                <h4>콘클라베</h4>
-                <div class="card-num">
-                  <div class="card-stars">
-                    <div class="card-star">
-                      <img src="../../img/rec_recommend/star.png" alt="별" />
-                    </div>
-                    <div class="card-star">
-                      <img src="../../img/rec_recommend/star.png" alt="별" />
-                    </div>
-                    <div class="card-star">
-                      <img src="../../img/rec_recommend/star.png" alt="별" />
-                    </div>
-                    <div class="card-star">
-                      <img src="../../img/rec_recommend/star.png" alt="별" />
-                    </div>
-                    <div class="card-star">
-                      <img src="../../img/rec_recommend/star.png" alt="별" />
-                    </div>
-                  </div>
-                  <h6>(8.9/10)</h6>
-                </div>
-                <div class="card-chips">
-                  <span class="card-chip">드라마</span>
-                  <span class="card-chip">스릴러</span>
-                </div>
-                <div class="year-hour">
-                  <h6>2025</h6>
-                  <h6>2h 28m</h6>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-img">
-                <img src="../../img/rec_recommend/img1-1.png" alt="" />
-              </div>
-              <div class="card-txt">
-                <h4>콘클라베</h4>
-                <div class="card-num">
-                  <div class="card-stars">
-                    <div class="card-star">
-                      <img src="../../img/rec_recommend/star.png" alt="별" />
-                    </div>
-                    <div class="card-star">
-                      <img src="../../img/rec_recommend/star.png" alt="별" />
-                    </div>
-                    <div class="card-star">
-                      <img src="../../img/rec_recommend/star.png" alt="별" />
-                    </div>
-                    <div class="card-star">
-                      <img src="../../img/rec_recommend/star.png" alt="별" />
-                    </div>
-                    <div class="card-star">
-                      <img src="../../img/rec_recommend/star.png" alt="별" />
-                    </div>
-                  </div>
-                  <h6>(8.9/10)</h6>
-                </div>
-                <div class="card-chips">
-                  <span class="card-chip">드라마</span>
-                  <span class="card-chip">스릴러</span>
-                </div>
-                <div class="year-hour">
-                  <h6>2025</h6>
-                  <h6>2h 28m</h6>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-img">
-                <img src="../../img/rec_recommend/img1-1.png" alt="" />
-              </div>
-              <div class="card-txt">
-                <h4>콘클라베</h4>
-                <div class="card-num">
-                  <div class="card-stars">
-                    <div class="card-star">
-                      <img src="../../img/rec_recommend/star.png" alt="별" />
-                    </div>
-                    <div class="card-star">
-                      <img src="../../img/rec_recommend/star.png" alt="별" />
-                    </div>
-                    <div class="card-star">
-                      <img src="../../img/rec_recommend/star.png" alt="별" />
-                    </div>
-                    <div class="card-star">
-                      <img src="../../img/rec_recommend/star.png" alt="별" />
-                    </div>
-                    <div class="card-star">
-                      <img src="../../img/rec_recommend/star.png" alt="별" />
-                    </div>
-                  </div>
-                  <h6>(8.9/10)</h6>
-                </div>
-                <div class="card-chips">
-                  <span class="card-chip">드라마</span>
-                  <span class="card-chip">스릴러</span>
-                </div>
-                <div class="year-hour">
-                  <h6>2025</h6>
-                  <h6>2h 28m</h6>
-                </div>
-              </div>
-            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </section>
         <section class="holiday">
           <h3>연휴에 볼 시리즈 영화가 필요하다면</h3>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card-img">
+                  <img src="../../img/rec_recommend/img1-1.png" alt="" />
+                </div>
+                <div class="card-txt">
+                  <h4>콘클라베</h4>
+                  <div class="card-num">
+                    <div class="card-stars">
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                    </div>
+                    <h6>(8.9/10)</h6>
+                  </div>
+                  <div class="card-chips">
+                    <span class="card-chip">드라마</span>
+                    <span class="card-chip">스릴러</span>
+                  </div>
+                  <div class="year-hour">
+                    <h6>2025</h6>
+                    <h6>2h 28m</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img">
+                  <img src="../../img/rec_recommend/image 224.png" alt="" />
+                </div>
+                <div class="card-txt">
+                  <h4>카사네 : 빼앗는 얼굴</h4>
+                  <div class="card-num">
+                    <div class="card-stars">
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                    </div>
+                    <h6>(8.9/10)</h6>
+                  </div>
+                  <div class="card-chips">
+                    <span class="card-chip">판타지</span>
+                    <span class="card-chip">스릴러</span>
+                    <span class="card-chip">미스터리</span>
+                  </div>
+                  <div class="year-hour">
+                    <h6>2025</h6>
+                    <h6>2h 28m</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img">
+                  <img src="../../img/rec_recommend/image 218 (1).png" alt="" />
+                </div>
+                <div class="card-txt">
+                  <h4>미치광이 삐에로</h4>
+                  <div class="card-num">
+                    <div class="card-stars">
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                    </div>
+                    <h6>(8.9/10)</h6>
+                  </div>
+                  <div class="card-chips">
+                    <span class="card-chip">드라마</span>
+                  </div>
+                  <div class="year-hour">
+                    <h6>2025</h6>
+                    <h6>2h 28m</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img">
+                  <img src="../../img/rec_recommend/image 223.png" alt="" />
+                </div>
+                <div class="card-txt">
+                  <h4>무간도</h4>
+                  <div class="card-num">
+                    <div class="card-stars">
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                    </div>
+                    <h6>(8.9/10)</h6>
+                  </div>
+                  <div class="card-chips">
+                    <span class="card-chip">드라마</span>
+                    <span class="card-chip">액션</span>
+                  </div>
+                  <div class="year-hour">
+                    <h6>2025</h6>
+                    <h6>2h 28m</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img">
+                  <img src="../../img/rec_recommend/img1-1.png" alt="" />
+                </div>
+                <div class="card-txt">
+                  <h4>콘클라베</h4>
+                  <div class="card-num">
+                    <div class="card-stars">
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                    </div>
+                    <h6>(8.9/10)</h6>
+                  </div>
+                  <div class="card-chips">
+                    <span class="card-chip">드라마</span>
+                    <span class="card-chip">스릴러</span>
+                  </div>
+                  <div class="year-hour">
+                    <h6>2025</h6>
+                    <h6>2h 28m</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img">
+                  <img src="../../img/rec_recommend/img1-1.png" alt="" />
+                </div>
+                <div class="card-txt">
+                  <h4>콘클라베</h4>
+                  <div class="card-num">
+                    <div class="card-stars">
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                    </div>
+                    <h6>(8.9/10)</h6>
+                  </div>
+                  <div class="card-chips">
+                    <span class="card-chip">드라마</span>
+                    <span class="card-chip">스릴러</span>
+                  </div>
+                  <div class="year-hour">
+                    <h6>2025</h6>
+                    <h6>2h 28m</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img">
+                  <img src="../../img/rec_recommend/image 222.png" alt="" />
+                </div>
+                <div class="card-txt">
+                  <h4>갈증</h4>
+                  <div class="card-num">
+                    <div class="card-stars">
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                    </div>
+                    <h6>(8.9/10)</h6>
+                  </div>
+                  <div class="card-chips">
+                    <span class="card-chip">드라마</span>
+                    <span class="card-chip">미스터리</span>
+                  </div>
+                  <div class="year-hour">
+                    <h6>2025</h6>
+                    <h6>2h 28m</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </section>
         <section class="horror">
           <h3>여름에 보기 좋은 호러 영화 엄선</h3>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card-img">
+                  <img src="../../img/rec_recommend/img1-1.png" alt="" />
+                </div>
+                <div class="card-txt">
+                  <h4>콘클라베</h4>
+                  <div class="card-num">
+                    <div class="card-stars">
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                    </div>
+                    <h6>(8.9/10)</h6>
+                  </div>
+                  <div class="card-chips">
+                    <span class="card-chip">드라마</span>
+                    <span class="card-chip">스릴러</span>
+                  </div>
+                  <div class="year-hour">
+                    <h6>2025</h6>
+                    <h6>2h 28m</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img">
+                  <img src="../../img/rec_recommend/image 224.png" alt="" />
+                </div>
+                <div class="card-txt">
+                  <h4>카사네 : 빼앗는 얼굴</h4>
+                  <div class="card-num">
+                    <div class="card-stars">
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                    </div>
+                    <h6>(8.9/10)</h6>
+                  </div>
+                  <div class="card-chips">
+                    <span class="card-chip">판타지</span>
+                    <span class="card-chip">스릴러</span>
+                    <span class="card-chip">미스터리</span>
+                  </div>
+                  <div class="year-hour">
+                    <h6>2025</h6>
+                    <h6>2h 28m</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img">
+                  <img src="../../img/rec_recommend/image 218 (1).png" alt="" />
+                </div>
+                <div class="card-txt">
+                  <h4>미치광이 삐에로</h4>
+                  <div class="card-num">
+                    <div class="card-stars">
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                    </div>
+                    <h6>(8.9/10)</h6>
+                  </div>
+                  <div class="card-chips">
+                    <span class="card-chip">드라마</span>
+                  </div>
+                  <div class="year-hour">
+                    <h6>2025</h6>
+                    <h6>2h 28m</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img">
+                  <img src="../../img/rec_recommend/image 223.png" alt="" />
+                </div>
+                <div class="card-txt">
+                  <h4>무간도</h4>
+                  <div class="card-num">
+                    <div class="card-stars">
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                    </div>
+                    <h6>(8.9/10)</h6>
+                  </div>
+                  <div class="card-chips">
+                    <span class="card-chip">드라마</span>
+                    <span class="card-chip">액션</span>
+                  </div>
+                  <div class="year-hour">
+                    <h6>2025</h6>
+                    <h6>2h 28m</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img">
+                  <img src="../../img/rec_recommend/img1-1.png" alt="" />
+                </div>
+                <div class="card-txt">
+                  <h4>콘클라베</h4>
+                  <div class="card-num">
+                    <div class="card-stars">
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                    </div>
+                    <h6>(8.9/10)</h6>
+                  </div>
+                  <div class="card-chips">
+                    <span class="card-chip">드라마</span>
+                    <span class="card-chip">스릴러</span>
+                  </div>
+                  <div class="year-hour">
+                    <h6>2025</h6>
+                    <h6>2h 28m</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img">
+                  <img src="../../img/rec_recommend/img1-1.png" alt="" />
+                </div>
+                <div class="card-txt">
+                  <h4>콘클라베</h4>
+                  <div class="card-num">
+                    <div class="card-stars">
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                    </div>
+                    <h6>(8.9/10)</h6>
+                  </div>
+                  <div class="card-chips">
+                    <span class="card-chip">드라마</span>
+                    <span class="card-chip">스릴러</span>
+                  </div>
+                  <div class="year-hour">
+                    <h6>2025</h6>
+                    <h6>2h 28m</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img">
+                  <img src="../../img/rec_recommend/image 222.png" alt="" />
+                </div>
+                <div class="card-txt">
+                  <h4>갈증</h4>
+                  <div class="card-num">
+                    <div class="card-stars">
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                      <div class="card-star">
+                        <img src="../../img/rec_recommend/star.png" alt="별" />
+                      </div>
+                    </div>
+                    <h6>(8.9/10)</h6>
+                  </div>
+                  <div class="card-chips">
+                    <span class="card-chip">드라마</span>
+                    <span class="card-chip">미스터리</span>
+                  </div>
+                  <div class="year-hour">
+                    <h6>2025</h6>
+                    <h6>2h 28m</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </section>
         <section class="list">
           <div class="profile">
             <div class="profile-img">
-              <img src="" alt="프로필" />
+              <img
+                src="../../img/book_movie/ing-img/image 169.png"
+                alt="프로필"
+              />
             </div>
             <div class="profile-txt">
               <h6>무서운게 제일 좋아 님을 위한 추천 리스트</h6>
@@ -391,14 +996,88 @@
           </div>
           <div class="list-movies">
             <div class="list-movie">
-              <img src="" alt="영화" />
+              <img
+                src="../../img/rec_recommend/listimg/image 212.png"
+                alt="영화"
+              />
+            </div>
+            <div class="list-movie">
+              <img
+                src="../../img/rec_recommend/listimg/image 213.png"
+                alt="영화"
+              />
+            </div>
+            <div class="list-movie">
+              <img
+                src="../../img/rec_recommend/listimg/image 214.png"
+                alt="영화"
+              />
+            </div>
+            <div class="list-movie">
+              <img
+                src="../../img/rec_recommend/listimg/image 215.png"
+                alt="영화"
+              />
+            </div>
+            <div class="list-movie">
+              <img
+                src="../../img/rec_recommend/listimg/image 216.png"
+                alt="영화"
+              />
+            </div>
+            <div class="list-movie">
+              <img
+                src="../../img/rec_recommend/listimg/image 225.png"
+                alt="영화"
+              />
             </div>
           </div>
         </section>
         <section class="ad">
-          <img src="" alt="광고" />
+          <img src="../../img/rec_recommend/ad.png" alt="광고" />
         </section>
       </main>
+      <footer>
+        <div class="footer-top">
+          <ul class="footer-links">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">위치기반서비스 이용약관</a></li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-left">
+            <p>
+              고객센터<br /><span>평일 9:30 ~ 17:00(12:00~14:00 제외)</span>
+            </p>
+            <p>채팅 상담하기<br />문의등록하기<br />도움말 센터 바로가기</p>
+          </div>
+          <div class="footer-center">
+            <p>
+              RESCREEN(주) | 대표이사 정은우 | 사업자등록번호 123-45-67890 |
+              통신판매업 신고번호 제 2021-서울강남-1234호 | 호스팅 서비스사업자:
+              RE:SCREEN ㈜<br />
+              (12345) 서울특별시 강남구 테헤란로 123, 456층 | 이메일 상담
+              info@rescreen.com | 유선 상담 1661-9056&copy rescreen Co., Ltd.
+              <br />고객센터와 무관한 내용은 처리되지 않습니다.
+            </p>
+
+            <p>
+              일부 상품의 경우 RESCREEN은 통신판매중개자이며 통신판매의 당사자가
+              아닙니다.<br />
+              해당되는 상품의 경우 상품, 정보, 거래에 관한 책임은 판매자에게
+              있으며, 이를 확인하시기 바랍니다.
+            </p>
+          </div>
+          <div class="footer-right">
+            <!-- 로고 이미지 자리 -->
+            <a href="/"> <img src="../../img/header/logo.png" alt="로고" /></a>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
