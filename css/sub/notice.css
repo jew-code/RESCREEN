@@ -288,10 +288,11 @@ h1 img {
 .filter-buttons {
   display: flex;
   justify-content: center;
+  gap: 8px;
 }
 .filter-buttons > button {
   border: none;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
   cursor: pointer;
   color: #fff;
@@ -303,7 +304,9 @@ h1 img {
   margin-bottom: 40px;
   margin-left: 4px;
 }
-
+.filter-buttons > button:first-child {
+  background-color: rgba(65, 206, 137, 1);
+}
 /* 표 */
 table {
   font-size: 0.9em;
